@@ -1,0 +1,52 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:White;
+}
+
+html, body{
+    height: 100%;
+    width:100%;
+}
+
+/* Css Variables */
+:root{
+    --primary : #0d6efd;
+    /* --primary: #ffc107; */
+}
+
+/* Css */
+.nav-link, .nav-link .btn{
+    margin:0 10px;
+}
+
+.overlay{
+    height:92vh;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.712);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1rem;
+    color:white;
+}
+
+#landing{
+    z-index:1;
+    background-image: url("../images/LandingBg.jpg");
+    height:92vh;
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#landing #head{
+    text-transform: uppercase;
+    color:var(--primary);
+    font-size: 3rem;
+    font-weight: bold;
+}
