@@ -15,7 +15,7 @@ html, body{
 
 /* Css Variables */
 :root{
-    --primary : #0d6efd;
+    --primary : #0249b4;
     /* --primary: #ffc107; */
 }
 
@@ -283,7 +283,7 @@ body {
 ul {
   margin:0;
   padding:0;
-  text-align:center;
+  /* text-align:center; */
 }
 
 ul li {
@@ -342,7 +342,7 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #838080;
+  color: #b4b4b4;
 }
 
 .section-title p {
@@ -350,6 +350,20 @@ section {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
+}
+
+@media(max-width:729px){
+  .gallery .gallery-item{
+    /* width:45%; */
+  }
+  .gallery .gallery-item img{
+    width:100%;
+  }
+}
+
+#gal{
+  background-image: url("../images/Testimonial.jpg");
+  background-size: cover;
 }
 
 /*-------------------------------------------------------------- */
@@ -396,6 +410,9 @@ section {
 .resume .resume-item ul {
   padding-left: 20px;
 }
+.resume .resume-item p{
+  color:white;
+} 
 .resume .resume-item ul li {
   padding-bottom: 10px;
 }
@@ -412,4 +429,123 @@ section {
   top: 0;
   background: #fff;
   border: 2px solid #0563bb;
+}
+
+.coorganizers img{
+  height:100px;
+}
+
+@media(max-width:797px){
+  .coorganizers img{
+    height:75px;
+  }
+}
+
+@media(max-width:479px){
+  .coorganizers{
+    flex-direction: column-reverse;
+  }
+  .coorganizers img{
+    margin-top:20px;
+  }
+}
+
+#whatnext{
+  background-image: url("../images/Code.jpg");
+  background-size: cover;
+}
+
+#overlay{
+  background:rgba(0, 0, 0, 0.85  );
+}
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+.contact .info i {
+  font-size: 20px;
+  background: var(--primary);
+  color:white;
+  float: left;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #151515;
+}
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #484848;
+}
+.contact .info .email, .contact .info .phone {
+  margin-top: 40px;
+}
+.contact .php-email-form {
+  width: 100%;
+  background: #fff;
+}
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  border-color: var(--primary);
+}
+.contact .php-email-form input {
+  height: 44px;
+}
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+.contact .php-email-form button[type=submit] {
+  background: var(--primary);
+  border: 0;
+  padding: 10px 24px;
+  color: white;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+.contact .php-email-form button[type=submit]:hover {
+  background: var(--primary);
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
