@@ -1,0 +1,38 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    user-select: none;
+    /* color:White; */
+  
+}
+
+html, body{
+    height: 100%;
+    width:100%;
+}
+
+/* Css Variables */
+:root{
+    --primary : #0249b4;
+    /* --primary: #ffc107; */
+}
+
+
+#sideImg{
+    /* background-image: url("../images/Code.jpg"); */
+    background-size: cover;
+}
+#overlay{
+    /* background: rgba(0,0, ,0.5); */
+}
+
+label{
+    font-weight: 500;
+}
+
+.form-control:focus{
+    outline:none !important;
+    border:none !important;
+}

@@ -28,6 +28,7 @@ html, body{
     height:92vh;
     width: 100%;
     background-color:rgba(0, 0, 0, 0.712);
+    /* backdrop-filter: blur(10px); */
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -487,10 +488,10 @@ section {
   margin-bottom: 5px;
   color: #151515;
 }
-.contact .info p {
+.contact .info h6 {
   padding: 0 0 0 60px;
   margin-bottom: 0;
-  font-size: 14px;
+  /* font-size: 14px; */
   color: #484848;
 }
 .contact .info .email, .contact .info .phone {
