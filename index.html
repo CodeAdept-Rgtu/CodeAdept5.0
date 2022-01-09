@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeAdpet 5.0</title>
+    <title>CodeAdept 5.0</title>
     <link rel="stylesheet" href="assets/stylesheet/style.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -18,33 +18,49 @@
 
 </head>
 <body>
-       <!-- Navbar -->
-       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="assets/images/Logo.png" width="30px" class="me-1" />
-            CodeAdept</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a href="register.html"><button class="btn btn-primary rounded-0 me-1">Register</button></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <!-- Navbar -->
+
 
     <!-- Landing -->
     <div id="landing">
-        <div class="overlay text-center">
-          <div>
-            <img src="assets/images/Logo.png" class="my-4" width="150px"/>
-            <h1>Learn the Way to Code</h1>
-            <p id="head">CodeAdept 5.0</p>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark pt-3">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/Logo.png" width="30px" class="me-1" />
+              CodeAdept</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a href="register1.html"><button class="btn btn-primary rounded-0 me-1" id="registerBtn">Register</button></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      <!-- Navbar -->
+        <div class="overlay">
+          <div class="container text-center pb-5">
+            <img src="assets/images/Logo.png" class="my-4 mx-2" width="150px"/>
+            <!-- <h1>Get Ready To Code</h1> -->
+            <p id="head"><span id='left'>&lt;</span> CodeAdept <span id="season">5</span>.0 <span id="right">&gt;</span></p>
+            <h1>Get Ready To Code</h1>
+            <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
           </div>
       </div>
     </div>
@@ -52,7 +68,7 @@
 
 
 <!-- Section for More about code ADAPT -->
-<section class="my-5" data-aos="fade-up" data-aos-once="true">
+<section class="my-5" id="about">
   <div class="container mt-3">
     <div class="row">
       <div class="col-5 tp mx-auto">
@@ -76,8 +92,8 @@
           <div class="col-5 tp mx-auto">
             <h3 class="prot mb-3">Co-organizers</h3>
             <div class="d-flex justify-content-around pt-5 coorganizers">
+              <img src="./assets/images/asper.png" class="mx-auto"/>
                 <img src="./assets/images/GDSC.png" class="mx-auto"/>
-                <img src="./assets/images/asper.png" class="mx-auto"/>
             </div>
             
           </div>
@@ -87,6 +103,7 @@
     <!-- Section -->
 
     <!-- Testimonial -->
+
     <section class="mt-5 bg-dark text-white py-5 " >
       <div class="container mt-3">
         <div class="row">
@@ -97,6 +114,7 @@
             <p class=" rot ">Code.org is a non-profit organization and eponymous website led by Hadi and Ali Partovi that aims to encourage people, particularly school students in the United States, to learn computer science</p>
           </div>
         </div>
+      
       </div>
     </section>
     <!-- Section -->
@@ -133,14 +151,14 @@
         </div>
         <h3 class="resume-title text-white">Webinars</h3>
         <div class="resume-item">
-          <h4>Reasoning And Aptitude</h4>
-          <h5><i>15<sup> th</sup> January, 2022</i></h5>
-          <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+          <h4>Aptitude And Reasoning</h4>
+          <h5><i>16<sup> th</sup> January, 2022</i></h5>
+          <p>Dive into the pool of Aptitude and Reasoning with us.</p>
         </div>
         <div class="resume-item">
-          <h4>Get Acquainted With Coding</h4>
+          <h4> Code Evolution</h4>
           <h5><i>16<sup> th</sup> January, 2022</i></h5>
-          <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+          <p>Know How To Code Efficiently From The Geeks</p>
         </div>
       </div>
       <div class="col-lg-6">
@@ -164,7 +182,7 @@
       <h3 class="resume-title text-white">Get Your Output</h3>
       <div class="resume-item ms-3">
         <h4>What's For The Winners</h4>
-        <p>Get Exciting Cash Prizes and bunch of goodies from <em>Newton School</em></p>
+        <p>Get Exciting Cash Prizes and a bunch of goodies.</p>
       </div>
     </div>
 
@@ -176,13 +194,13 @@
   <!-- Section -->
  <!-- Testimonial -->
  <section class="mb-5 bg-dark text-white py-5">
-  <div class="container mt-3">
+  <div class="container-fluid mt-3">
     <div class="row">
-      <div class="col-5 tp mx-auto" data-aos="zoom-in" data-aos-once="true">
-        <h6 class="text-secondary">" What The Previous Year Winners Says "</h6>
-        <h3 class="prot">Sandesh Jain</h3>
-        <hr width="20%" class="mx-auto" style="height:1px; opacity:0.4;"/>
-        <p class=" rot ">Code.org is a non-profit organization and eponymous website led by Hadi and Ali Partovi that aims to encourage people, particularly school students in the United States, to learn computer science</p>
+      <div class="col-5 tp mx-auto text-center">
+        <h6 class="text-secondary">" Ready To Challenge Your Coding Skills ? "</h6>
+        <h3 class="prot">Register With Us</h3>
+        <hr width="20%" style="height:1px; opacity:0.4;" class="mx-auto"/>
+        <a href="register1.html"><button class="btn btn-primary mb-3">Register Now</button></a>
       </div>
     </div>
   </div>
@@ -195,7 +213,7 @@
       <div class="container">
         <div class="section-title text-center pt-4">
           <h2>Gallery</h2>
-          <p>Some Glimpses From Past CodeAdept</p>
+          <p>Previous Year's Glimpses</p>
         </div>
       </div>
 
@@ -314,19 +332,19 @@
             <div class="info">
 
               <div class="email">
-                <i class="fas fa-envelope"></i>
+                <i class="fas fa-envelope mt-1"></i>
                 <h4>Email:</h4>
                 <a class="text-decoration-none" href="mailto:codeadept@gmail.com"><h6>codeadeptrgtu@gmail.com</h6></a>
               </div>
               
               <div class="email">
-                <i class="fab fa-instagram"></i>
+                <i class="fab fa-instagram mt-1"></i>
                 <h4>Instagram:</h4>
                 <a class="text-decoration-none" href="https://www.instagram.com/codeadept/"><h6>@codeadept</h6></a>
               </div>
 
-              <div class="email">
-                <i class="fab fa-linkedin"></i>
+              <div class="email align-items-center">
+                <i class="fab fa-linkedin mt-1"></i>
                 <h4>LinkedIn:</h4>
                 <a href="https://www.linkedin.com/showcase/codeadept" class="text-decoration-none"><h6>@codeadept</h6></a>
               </div>
@@ -373,8 +391,8 @@
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
-<!-- <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
@@ -387,6 +405,19 @@
   );
 
 </script>
+
+<script>
+  var incrementer = document.getElementById('season');
+        var version = 1; 
+        const myTimeout = setInterval(()=>{
+            if(version == 4){
+                clearInterval(myTimeout);
+            }
+            version+=1;
+            incrementer.innerText = version;
+        },500);
+</script>
+
 
 </body>
 </html>

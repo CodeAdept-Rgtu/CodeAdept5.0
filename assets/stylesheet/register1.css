@@ -1,0 +1,48 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400&display=swap');
+
+/* CSS Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    user-select: none;
+    /* color:White; */
+  
+}
+
+html, body{
+    height: 100%;
+    width:100%;
+}
+
+/* Css Variables */
+:root{
+    --primary : #0249b4;
+    /* --primary: #ffc107; */
+}
+
+#bg{
+    background-image: url("../images/CBg.png");
+    background-size: cover;
+}
+
+.nav-link{
+    margin: 0 10px;
+}
+
+
+.navbar{
+    font-family: 'Titillium Web', sans-serif;
+  }
+  
+  .nav-link:hover{
+    color:var(--primary) !important;
+  }
+  
+
+#form-container{
+    background:rgba(255, 255, 255, 0.253);
+    backdrop-filter: blur(20px);
+}

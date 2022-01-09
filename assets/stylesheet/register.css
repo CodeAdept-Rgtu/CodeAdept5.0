@@ -19,6 +19,9 @@ html, body{
     /* --primary: #ffc107; */
 }
 
+.nav-link{
+    margin-right:15px;
+}
 
 #sideImg{
     /* background-image: url("../images/Code.jpg"); */

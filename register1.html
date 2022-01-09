@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/stylesheet/register1.css">
+      <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="shortcut icon" href="assets/images/Logo.png" type="image/x-icon">
+      
+     <!-- Font Awesome -->
+      
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+</head>
+<body>
+    <div id="bg" class="pb-4">
+        
+          <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent pt-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/Logo.png" width="30px" class="me-1" /> CodeAdept</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="team.html">Team</a>
+              </li>
+              <li class="nav-item">
+                <a href="register.html"><button class="btn btn-primary rounded-0">Register</button></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar -->
+
+        <div class='container my-3 rounded-3' id="form-container">
+            <form method="POST" class="needs-validation pt-5 text-white px-3">
+                <h1 class="text-center">Register</h1>
+                <hr width="20%" class="mx-auto" style='color:rgb(255, 255, 255); width:25%; opacity: 1; height:2px;' />
+                <div class="row text-white justify-content-center">
+                  <div class="col-lg-5 mb-4">
+                    <label for="name" class="mb-2">First Name</label>
+                    <input class="form-control" type="text" name="firstname" placeholder="First Name" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Name cannot be blank !</div>
+                  </div>
+                  <div class="col-lg-5 mb-4">
+                    <label for="name" class="mb-2">Last Name</label>
+                    <input class="form-control" type="text" name="lastname" placeholder="Last Name" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Name cannot be blank !</div>
+                  </div>
+                  <div class="col-lg-5 mb-4">
+                    <label for='email' class="mb-2">Email</label>
+                    <input class="form-control" type="email" name="email" placeholder="Email" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Email cannot be blank !</div>
+                  </div>
+                  <div class="col-lg-5 mb-4">
+                    <label for='Contact' class="mb-2">Contact</label>
+                    <input class="form-control" type="text" name="contact" placeholder="Contact" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Contact cannot be blank !</div>
+                  </div>
+                  <div class="col-lg-10 mb-4">
+                    <label for='Enrollment_number' class="mb-2">Enrollment Number</label>
+                    <input class="form-control" type="text" name="Enrollment_number" placeholder="Enrollment Number">
+                  </div>
+                  <div class="col-lg-10 mb-4">
+                    <label for='address' class="mb-2">Address</label>
+                    <input class="form-control" type="text" name="address" placeholder="Address" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Address cannot be blank !</div>
+                  </div>
+                  <div class="col-lg-5 mb-4">
+                  <label for='branch' class="mb-2">Branch</label>
+                  <select name="branch" class="form-control" required>
+                    <option value="IT" selected>IT</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EX</option>
+                    <option value="MECH">MECH</option>
+                    <option value="CIVIL">CIVIL</option>
+                    </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Branch cannot be blank !</div>
+                </div>
+                <div class="col-lg-5 mb-4">
+                  <label for='clg_year' class="mb-2">Year of Admission</label>
+                  <select name="clg_year" class="form-control" required>
+                    <option value="2018" selected>2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Year of Admission cannot be blank !</div>
+                </div>
+                <div class="col-lg-10 mb-4">
+                  <label for='skills' class="mb-2 w-100">Previous Skills</label>
+                  <textarea name="skills" class="form-control"></textarea>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Contact cannot be blank !</div>
+                  <button type="submit" class="btn btn-primary d-block mt-4 ms-auto">Submit</button>
+                </div>
+              </form>
+        </div>
+    </div>
+</body>
+</html>

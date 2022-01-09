@@ -1,3 +1,7 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400&display=swap');
+
 /* CSS Reset */
 *{
     margin:0;
@@ -25,10 +29,9 @@ html, body{
 }
 
 .overlay{
-    height:92vh;
+    height:89vh;
     width: 100%;
-    background-color:rgba(0, 0, 0, 0.712);
-    /* backdrop-filter: blur(10px); */
+    background-color:rgba(0, 0, 0, 0.2);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -38,20 +41,33 @@ html, body{
     color:white;
 }
 
+.navbar{
+  background-color:rgba(0, 0, 0, 0.2) !important; 
+}
+
 #landing{
     z-index:1;
-    background-image: url("../images/LandingBg.jpg");
-    height:92vh;
-    width:100%;
+    font-family: 'Titillium Web', sans-serif;
+    background-image: url("../images/CBg.png");
+    background-position: bottom;
     background-size: cover;
+    height:100vh;
+    width:100%;
+
     background-repeat: no-repeat;
 }
 
 #landing #head{
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color:var(--primary);
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
+}
+
+@media(max-width:630px){
+  #landing #head{
+    font-size:2rem;
+  }
 }
 
 h2{
@@ -382,6 +398,7 @@ section {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
   margin-bottom: 20px;
   color: #45505b;
 }
@@ -396,7 +413,7 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   color: #0563bb;
   margin-bottom: 10px;
 }
@@ -549,4 +566,54 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+
+.arrow{
+  position: absolute;
+  /* top: 50%; */
+  margin-top: 4.7%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.arrow span{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #06A8FF;
+  border-right: 5px solid #06A8FF;
+  border-color: var(--primary);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
+
+.nav-link:hover{
+  color:var(--primary) !important;
+}
+
+#registerBtn:hover{
+  background : white;
+  color:var(--primary);
 }
